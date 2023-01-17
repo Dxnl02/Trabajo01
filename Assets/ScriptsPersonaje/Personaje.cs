@@ -33,4 +33,12 @@ public class Personaje : MonoBehaviour
             animator.SetBool("Final", false);
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.transform.tag == "Enemigo")
+        {
+            GameManager.Instance.Perder();
+        }
+    }
 }
