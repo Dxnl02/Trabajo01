@@ -6,8 +6,6 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] public int puntuacionActual, mejorPuntuacion;
-    [SerializeField] float tiempo;
-    [SerializeField] TMP_Text textoTiempo;
 
     public static GameManager Instance { get; internal set; }
 
@@ -20,11 +18,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        tiempo += Time.deltaTime;
-        int minutos = (int)tiempo / 60;
-        int segundos = (int)tiempo % 60;
-        Debug.Log(minutos + ":" + segundos);
-        textoTiempo.text = minutos + ":" + segundos;
+        
     }
 
     public void Perder()
