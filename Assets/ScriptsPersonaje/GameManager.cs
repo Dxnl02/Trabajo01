@@ -19,9 +19,6 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; internal set; }
 
 
-    [SerializeField] GameManager gameOver, botonRestart;
-    [SerializeField] GameManager personaje, enemigo;
-    [SerializeField] bool actdescronometro;
 
     // Start is called before the first frame update
     void Awake()
@@ -34,7 +31,7 @@ public class GameManager : MonoBehaviour
 
 
 
-        gameOver.SetActive(false);
+        texto.SetActive(false);
 
     }
 
