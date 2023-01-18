@@ -12,12 +12,27 @@ public class Enemigo : MonoBehaviour
     {
         camara = UnityEngine.Camera.main;
         posicionMinima = camara.ViewportToWorldPoint(new Vector2(0, 0));
-        posicionInicial = camara.ViewportToWorldPoint(new Vector2(1, 1));
+        posicionInicial = transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
         transform.Translate(Vector3.left * Time.deltaTime * velocidad);
+        if (posicionMinima.x > transform.position.x)
+        {
+            transform.position = posicionInicial;
+            velocidad++;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+    }
+    public void IniciarEnemigo()
+    {
+        transform.position = posicionInicial;
+        velocidad = 4;
     }
 }
