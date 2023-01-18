@@ -2061,7 +2061,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &538904256
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2525,7 +2525,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 621474446}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 965.2711, y: 1013.2612, z: -0.016479492}
+  m_LocalPosition: {x: -9.04, y: -1.84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3571,6 +3571,11 @@ MonoBehaviour:
   mejorPuntuacion: 0
   tiempo: 0
   textoTiempo: {fileID: 2068058153}
+  texto: {fileID: 1785001907}
+  boton: {fileID: 538904255}
+  jugador: {fileID: 1450313439}
+  enemigo: {fileID: 1740325962}
+  actdescronometro: 0
 --- !u!4 &924862765
 Transform:
   m_ObjectHideFlags: 0
@@ -6821,7 +6826,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1785001908
 RectTransform:
   m_ObjectHideFlags: 0
